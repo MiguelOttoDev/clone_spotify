@@ -1,4 +1,4 @@
-import { FaChevronLeft, FaChevronRight, FaPlay} from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaPlay } from "react-icons/fa";
 import Sidebar from "./components/sidebar";
 import Footer from "./components/footer";
 
@@ -7,7 +7,7 @@ function App() {
     <div className="h-screen flex flex-col">
       <div className="flex flex-1">
 
-      <Sidebar/>
+        <Sidebar />
 
         <main className="flex-1 p-6">
           <div className="flex items-center gap-3">
@@ -27,7 +27,7 @@ function App() {
               <strong>Peregrino</strong>
               <button className="p-3 rounded-full bg-green-500 ml-auto mr-8 invisible group-hover:visible">
                 <FaPlay color="#000" />
-                </button>
+              </button>
             </a>
 
             <a href="" className="bg-white/10 rounded group flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
@@ -35,7 +35,7 @@ function App() {
               <strong>Live at Home</strong>
               <button className="p-3 rounded-full bg-green-500 ml-auto mr-8 invisible group-hover:visible">
                 <FaPlay color="#000" />
-                </button>
+              </button>
             </a>
 
             <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
@@ -43,7 +43,7 @@ function App() {
               <strong>O carpinteiro</strong>
               <button className="p-3 rounded-full bg-green-500 ml-auto mr-8 invisible group-hover:visible">
                 <FaPlay color="#000" />
-                </button>
+              </button>
             </a>
 
             <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
@@ -52,68 +52,92 @@ function App() {
 
               <button className="p-3 rounded-full bg-green-500 ml-auto mr-8 invisible group-hover:visible">
                 <FaPlay color="#000" />
-                </button>
+              </button>
 
             </a>
 
             <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
-                <img src="/secreto_album.jpeg" width={80} height={80} alt="album" />
-                <strong>Som do secreto vol 3 </strong>
-                <button className="p-3 rounded-full bg-green-500 ml-auto mr-8 invisible group-hover:visible">
+              <img src="/secreto_album.jpeg" width={80} height={80} alt="album" />
+              <strong>Som do secreto vol 3 </strong>
+              <button className="p-3 rounded-full bg-green-500 ml-auto mr-8 invisible group-hover:visible">
                 <FaPlay color="#000" />
-                </button>
-              </a>
+              </button>
+            </a>
 
-              
-              <a href="" className="bg-white/10 rounded group flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
-                <img src="/bem_mais_precioso.jpg" width={80} height={80} alt="album" />
-                <strong>Bem mais precioso</strong>
 
-                <button className="p-3 rounded-full bg-green-500 ml-auto mr-8 invisible group-hover:visible">
+            <a href="" className="bg-white/10 rounded group flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+              <img src="/bem_mais_precioso.jpg" width={80} height={80} alt="album" />
+              <strong>Bem mais precioso</strong>
+
+              <button className="p-3 rounded-full bg-green-500 ml-auto mr-8 invisible group-hover:visible">
                 <FaPlay color="#000" />
-                </button>
-    
-              </a>
+              </button>
+
+            </a>
           </div>
           <h1 className="font-semibold text-3xl mt-10">Made for Miguel Otto</h1>
-          
-        <div className="grid grid-cols-8 gap-4 mt-4">
-          <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
-          <img src="/secreto_album.jpeg" className="w-full" width={80} height={80} alt="album" />
-          <strong className="font-semibold">Som do secreto vol 3</strong>
-          <span className="text-xs text-zinc-500">Álbum • Som Do Reino</span>
-          </a>
 
-          <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
-          <img src="/secreto_album.jpeg" className="w-full" width={80} height={80} alt="album" />
-          <strong className="font-semibold">Som do secreto vol 3</strong>
-          <span className="text-xs text-zinc-500">Álbum • Som Do Reino</span>
-          </a>
+          <div className="grid grid-cols-8 gap-4 mt-4">
+          <a href="" className="bg-white/5 p-3 rounded-md flex flex-col group gap-2 hover:bg-white/10 relative">
+              <div className="relative">
+                <img src="/secreto_album.jpeg" className="w-full" width={80} height={80} alt="album" />
+                <button className="p-3 rounded-full bg-green-500 absolute bottom-2 right-2 invisible group-hover:visible">
+                  <FaPlay color="#000" />
+                </button>
+              </div>
+              <strong className="font-semibold">Som do secreto vol 3</strong>
+              <span className="text-xs text-zinc-500">Álbum • Som Do Reino</span>
+            </a>
+            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col group gap-2 hover:bg-white/10 relative">
+              <div className="relative">
+                <img src="/secreto_album.jpeg" className="w-full" width={80} height={80} alt="album" />
+                <button className="p-3 rounded-full bg-green-500 absolute bottom-2 right-2 invisible group-hover:visible">
+                  <FaPlay color="#000" />
+                </button>
+              </div>
+              <strong className="font-semibold">Som do secreto vol 3</strong>
+              <span className="text-xs text-zinc-500">Álbum • Som Do Reino</span>
+            </a>
 
-          <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
-          <img src="/secreto_album.jpeg" className="w-full" width={80} height={80} alt="album" />
-          <strong className="font-semibold">Som do secreto vol 3</strong>
-          <span className="text-xs text-zinc-500">Álbum • Som Do Reino</span>
-          </a>
+            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col group gap-2 hover:bg-white/10 relative">
+              <div className="relative">
+                <img src="/secreto_album.jpeg" className="w-full" width={80} height={80} alt="album" />
+                <button className="p-3 rounded-full bg-green-500 absolute bottom-2 right-2 invisible group-hover:visible">
+                  <FaPlay color="#000" />
+                </button>
+              </div>
+              <strong className="font-semibold">Som do secreto vol 3</strong>
+              <span className="text-xs text-zinc-500">Álbum • Som Do Reino</span>
+            </a>
 
-          <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
-          <img src="/secreto_album.jpeg" className="w-full" width={80} height={80} alt="album" />
-          <strong className="font-semibold">Som do secreto vol 3</strong>
-          <span className="text-xs text-zinc-500">Álbum • Som Do Reino</span>
-          </a>
+            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col group gap-2 hover:bg-white/10 relative">
+              <div className="relative">
+                <img src="/secreto_album.jpeg" className="w-full" width={80} height={80} alt="album" />
+                <button className="p-3 rounded-full bg-green-500 absolute bottom-2 right-2 invisible group-hover:visible">
+                  <FaPlay color="#000" />
+                </button>
+              </div>
+              <strong className="font-semibold">Som do secreto vol 3</strong>
+              <span className="text-xs text-zinc-500">Álbum • Som Do Reino</span>
+            </a>
 
-          <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
-          <img src="/secreto_album.jpeg" className="w-full" width={80} height={80} alt="album" />
-          <strong className="font-semibold">Som do secreto vol 3</strong>
-          <span className="text-xs text-zinc-500">Álbum • Som Do Reino</span>
-          </a>
-        </div>
+            <a href="" className="bg-white/5 p-3 rounded-md flex flex-col group gap-2 hover:bg-white/10 relative">
+              <div className="relative">
+                <img src="/secreto_album.jpeg" className="w-full" width={80} height={80} alt="album" />
+                <button className="p-3 rounded-full bg-green-500 absolute bottom-2 right-2 invisible group-hover:visible">
+                  <FaPlay color="#000" />
+                </button>
+              </div>
+              <strong className="font-semibold">Som do secreto vol 3</strong>
+              <span className="text-xs text-zinc-500">Álbum • Som Do Reino</span>
+            </a>
+          </div>
 
         </main>
 
       </div>
 
-      <Footer/>
+      <Footer />
 
     </div>
 
